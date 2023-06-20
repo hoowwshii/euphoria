@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria</title>
     <link rel="stylesheet" href="style.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-<nav class="wrapper">
-<!---<div class="title">Euphoria</div> -->
-<li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
-<div class="items">
-<ul>
+<div class="wrapper">
+    <div class="lmao">
+    <li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
+<img src="icon/hamburg.png" class="menu-icon" style="height: 40px; " 
+onclick="togglemenu()"></div>
+
+<nav class="items">
+<ul id="menuList">
 <li><a href="about.html">Who the fuck are we?</a></li>
 <li><a href="socmed.html">Social Media</a></li>
 <li><a href="event.html">Event</a></li>
 </ul>
-</div>
 </nav>
+
+
+</div>
+</div>
 
 
 <div class="content">
@@ -35,4 +42,18 @@
 </div>
 
     </div>
+
+    <script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight ="130px";
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+</body>
 </html>
