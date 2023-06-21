@@ -6,47 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria</title>
     <link rel="stylesheet" href="style.css">
-   
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-<div class="wrapper">
-    <div class="lmao">
-    <li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
-<img src="icon/hamburg.png" class="menu-icon" style="height: 40px; " 
-onclick="togglemenu()"></div>
-
-<nav class="items">
-<ul id="menuList">
-<li><a href="about.html">Who the fuck are we?</a></li>
-<li><a href="socmed.html">Social Media</a></li>
-<li><a href="event.html">Event</a></li>
-</ul>
-</nav>
-
-
-</div>
-</div>
-
-
-<div class="content">
-    <br>
-    <div class="nama">
-        
-        <h1>Euphoria </h1>
-    <h3 style="padding-left: 15px; font-size: smaller; color:black"> /yo͞oˈfôrēə/</h3>
+        <div class="wrapper">
+            <div class="lmao">
+                <li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
+                <img src="icon/hamburg.png" class="menu-icon" style="height: 40px; " onclick="togglemenu()">
+            </div>
+                    <nav class="items">
+                        <ul id="menuList">
+                        <li><a href="about.html">Hall of Fame</a></li>
+                        <li><a href="socmed.html">Social Media</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        </ul>
+                    </nav>
+        </div>
     </div>
-    
-    <p style="font-size: larger;">a feeling or state of intense excitement and happiness.</p>
-</div>
 
+    <div class="content">
+        <br>
+<!--        padding-top 60px coba-->
+        <div style="padding-top: 60px">
+            <div class="nama">
+                <h1>Euphoria </h1>
+                <h3 style="padding-left: 15px; font-size: smaller; color:black"> /yo͞oˈfôrēə/</h3>
+            </div>
+            <p style="font-size: larger;">a feeling or state of intense excitement and happiness.</p>
+        </div>
+        <div class="fotoKelas">
+            <img src="img/1687324270990.jpg" alt="" style="height: inherit; width: inherit;">
+        </div>
     </div>
+
 
     <script>
     var menuList = document.getElementById("menuList");
     menuList.style.maxHeight = "0px";
-    
     function togglemenu(){
         if(menuList.style.maxHeight == "0px"){
             menuList.style.maxHeight ="130px";

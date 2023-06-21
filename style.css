@@ -3,6 +3,13 @@ https://encycolorpedia.com/bbd490
 color reference;
 
 */
+:root{
+    --primary-bg-color: rgb(187, 212, 144);
+    --secondary-bg-color: #94ad6b; /*Color for navbar in responsive mode */
+    --primary-text-color: #5a6447;
+    --primary-font-family: 'Montserrat', sans-serif; /*Font for navbar */
+}
+
 body{
     padding: 0; margin: 0;
 }
@@ -20,8 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    background-color: rgb(187, 212, 144); 
+    background-color: var(--primary-bg-color); 
 }
 
 .items ul{
@@ -29,35 +35,38 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .items ul>li{
     justify-content: center;
     align-items: center;
     list-style-type: none;
     color: white;
 }
+
 .lmao{
     display: flex;
     height: 58.4px;
-    
 }
+
 .menu-icon{
     display: none;
     padding: 10px;
     cursor: pointer;
-    
 }
+
 .title{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 21px;
-    font-family: 'Montserrat', sans-serif;
-    color: #5a6447; 
+    margin-left: 60px;
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color); 
 }
+
 .items ul>li>a{
     padding: 16px;
-    font-family: 'Montserrat', sans-serif;
-    color: #5a6447; 
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color); 
 }
 
 .items ul>li>a:hover{
@@ -80,12 +89,42 @@ a:active { text-decoration: none; }
 }
 
 .content{
+/* HEIGHT DI .CONTENT JGN PERNAH DI HAPUS PLZ   */
 
-align-items: center;
-justify-content: center;
+    display: flex;
+    height: 360px;
+    align-items: center;
+    margin-left: 60px;
 }
 
- 
+.hallOfFame{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.foto{
+    display: block;
+    height: 160px;
+    width: 90px;
+    background-color: aqua;
+}
+
+.fotoKelas{
+    max-height: 360px;
+    height: 100%;
+    max-width: 640px;
+    width: 100%;
+    position: absolute;
+    right: 35px;
+    /*left: 280px;*/
+    margin: 20px;
+    border-radius: 20px;
+
+}
+.fotoKelas img{
+    border-radius: 20px;
+    margin-top: 45px;
+}
 @media only screen and (max-width: 768px) {
     #menuList{
         overflow: hidden;
@@ -124,15 +163,20 @@ justify-content: center;
         
     }
     .content{
-        margin-left: 0;
-        margin-top: 20px;
+        display: block;
+        margin-left: 7px;
+        margin-top: 15px;
     }
-    .nama{
-        margin-top: 20px;
+    .fotoKelas{
+        position: absolute;
+        left: 0;
+
+        max-width: 320px;
+        max-height: 180px;
     }
     .items ul{
         display: flex !important; 
-        background: #94ad6b;
+        background: var(--secondary-bg-color);
         padding-left: 0px;
         flex-direction: column;
         align-items: center;
