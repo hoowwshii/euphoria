@@ -5,25 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social media</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="lmao">
-                <li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
-                <img src="icon/hamburg.png" class="menu-icon" style="height: 40px; " onclick="togglemenu()">
-            </div>
-                    <nav class="items">
-                        <ul id="menuList">
-                        <li><a href="about.html">Hall of Fame</a></li>
-                        <li><a href="socmed.html">Social Media</a></li>
-                        <li><a href="event.html">Event</a></li>
-                        </ul>
-                    </nav>
+<div class="container">
+    <div class="wrapper">
+        <div class="lmao">
+            <li class="title"><a href="index.html" style="color: #5a6447">Euphoria</a></li>
+            <img src="icon/hamburg.png" class="menu-icon" style="height: 40px; " onclick="togglemenu()">
         </div>
+        <nav class="items">
+            <ul id="menuList">
+                <li><a href="about.html">Hall of Fame</a></li>
+                <li><a href="socmed.html">Social Media</a></li>
+                <li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
     </div>
-    
+</div>
+<div class="mainmethod">
+    <div class="socialmediaContent">
+        <div class="box">
+            <a href="https://www.instagram.com/abcde_euphoria/">
+                <img src="icon/ing.png" alt=""></a>
+            <p><a href="https://www.instagram.com/abcde_euphoria/">@abcde_euphoria</a></p>
+        </div>
+
+        <div class="box">
+            <a href="https://www.youtube.com/@abcde_euphoria">
+                <img src="icon/ytb.png" alt=""></a>
+            <p><a href="https://www.youtube.com/@abcde_euphoria">@abcde_euphoria</a></p>
+        </div>
+
+    </div>
+
+</div>
+<script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight ="130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        </script>
 </body>
 </html>
