@@ -167,8 +167,10 @@ body{
     justify-content: left;
     /*background-color: var(--primary-bg-color); IDE ELVIA*/
     background-color: #C4D7B2;
+
     width: 28vw;
-    height: 52vh;
+    height: auto;
+    min-height: 52vh;
     /*height: 400px;*/
     overflow: hidden;
     border: #849378 solid 2px;
@@ -188,8 +190,7 @@ body{
 }
 .date{
     float: right;
-    padding-right: 40px;
-
+    padding-right: 2vw;
 }
 
 .firstLine > .box > .text{
@@ -198,7 +199,7 @@ body{
 
     /*color: #C4D7B2; IDE ELVIA JG*/
     margin-top: 0;
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 20px;
 }
 .yearname{
@@ -213,7 +214,21 @@ a:visited { text-decoration: none; color:black; }
 a:hover { text-decoration: none; color:black; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:black }
-
+@media only screen and (max-width: 1280px){
+    .firstLine > .box{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1088px){
+    .firstLine > .box{
+        height: auto;
+    }
+}
+/*@media only screen and (max-width: 896px){*/
+/*    .firstLine > .box{*/
+/*        height: 65vh;*/
+/*    }*/
+/*}*/
 @media only screen and (max-width: 768px) {
     #menuList{
         height: 110px;
@@ -303,6 +318,9 @@ a:hover, a:active { text-decoration: none; color:black }
         height: 31.375vw;
     /*height: 198px;*/
     /*    width: 352px;*/
+    }
+    .date{
+        padding-right: 20px;
     }
 }
 
