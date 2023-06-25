@@ -8,10 +8,14 @@ color reference;
     --secondary-bg-color: #94ad6b; /*Color for navbar in responsive mode */
     --primary-text-color: #5a6447;
     --primary-font-family: 'Montserrat', sans-serif; /*Font for navbar */
+    --body-bg-color: #E1ECC8;
 }
 
 body{
     padding: 0; margin: 0;
+
+    background-color: var(--body-bg-color);
+    /*color palet dari felicia*/
 }
 
 .container{
@@ -78,9 +82,6 @@ body{
 .content{
     margin-left: 19px;
 }
-
-
-
 .nama{
     display: flex;
     align-items: center;
@@ -88,7 +89,6 @@ body{
 
 .content{
     /* HEIGHT DI .CONTENT JGN PERNAH DI HAPUS PLZ   */
-
     display: flex;
     height: 360px;
     align-items: center;
@@ -99,11 +99,10 @@ body{
     padding-left: 20px;
     padding-top: 20px;
 }
-
 .foto{
     display: block;
-    height: 160px;
-    width: 90px;
+    height: 320px;
+    width: 320px;
     background-color: aqua;
 }
 
@@ -117,9 +116,7 @@ body{
     /*left: 280px;*/
     margin: 20px;
     border-radius: 20px;
-
 }
-
 .fotoKelas img{
     border-radius: 20px;
     margin-top: 45px;
@@ -139,10 +136,9 @@ body{
 
     margin-right: 20px;
     text-align: center;
-    /*border: black 2px solid;*/
-
     width: 200px;
     height: 200px;
+
 }
 .box img{
     display: block;
@@ -151,7 +147,6 @@ body{
     width: 200px;
 }
 .box a{
-
     text-align: center;
 }
 .socialmediaContent > .box p{
@@ -164,41 +159,71 @@ body{
 .firstLine{
     justify-content: center;
     display: flex;
-
 }
 
 .firstLine > .box{
-
+    border-radius: 20px;
     text-align: left;
     justify-content: left;
-    background-color: aqua;
+    /*background-color: var(--primary-bg-color); IDE ELVIA*/
+    background-color: #C4D7B2;
     width: 28vw;
-    height: 50vh;
+    height: 52vh;
     /*height: 400px;*/
+    overflow: hidden;
+    border: #849378 solid 2px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
 }
 .firstLine > .box img{
-    width: 24vw;
-    height: 20vh;
+    /*width: 336px;*/
+    /*height: 189px;*/
     /*height: 100px;*/
+    /*width: 28vw;*/
+    /*height: 15.75vw;*/
+    width: 24.5vw;
+    height: 13.75vw;
     margin: 20px;
     /*width: 345px;*/
 }
-.firstLine > .box p{
+.date{
+    float: right;
+    padding-right: 40px;
+
+}
+
+.firstLine > .box > .text{
+
+    font-weight: bold;
+
+    /*color: #C4D7B2; IDE ELVIA JG*/
+    margin-top: 0;
     font-size: 30px;
     margin-left: 20px;
 }
+.yearname{
+    display: flex;
+    justify-content: center;
+    color: #353b2a;
+}
+
+
 a{ text-decoration: none}
 a:visited { text-decoration: none; color:black; }
 a:hover { text-decoration: none; color:black; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:black }
+
 @media only screen and (max-width: 768px) {
     #menuList{
+        height: 110px;
         overflow: hidden;
-        margin-bottom: 15px;
-        margin: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        border-radius: 0 0 20px 20px;
     }
     .wrapper{
+
         flex-direction: column;
         align-items: center;
     }
@@ -222,11 +247,10 @@ a:hover, a:active { text-decoration: none; color:black }
     }
     .title{
         font-size: 22px;
-
         justify-content: center;
         align-items: center;
         margin-left: 0;
-        padding-left: 0px;
+        padding-left: 0;
 
     }
     .content{
@@ -237,14 +261,13 @@ a:hover, a:active { text-decoration: none; color:black }
     .fotoKelas{
         position: absolute;
         left: 0;
-
         max-width: 320px;
         max-height: 180px;
     }
     .items ul{
         display: flex !important;
         background: var(--secondary-bg-color);
-        padding-left: 0px;
+        padding-left: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -254,7 +277,7 @@ a:hover, a:active { text-decoration: none; color:black }
     }
     .items ul>li>a{
         padding: 10px;
-        margin: 0px;
+        margin: 0;
     }
     .socialmediaContent{
         display: block;
@@ -272,9 +295,14 @@ a:hover, a:active { text-decoration: none; color:black }
     }
     .firstLine > .box{
         width: 70vw;
-        height: 300px;
+        height: 350px;
         margin: 20px;
     }
+    .firstLine > .box img{
+        width: 61vw;
+        height: 31.375vw;
+    /*height: 198px;*/
+    /*    width: 352px;*/
+    }
 }
-
 
