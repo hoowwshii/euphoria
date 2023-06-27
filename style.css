@@ -8,14 +8,12 @@ color reference;
     --secondary-bg-color: #94ad6b; /*Color for navbar in responsive mode */
     --primary-text-color: #5a6447;
     --primary-font-family: 'Montserrat', sans-serif; /*Font for navbar */
-    --body-bg-color: #E1ECC8;
+    --body-bg-color: #D7EFFE;
 }
 
 body{
     padding: 0; margin: 0;
-
     background-color: var(--body-bg-color);
-    /*color palet dari felicia*/
 }
 
 .container{
@@ -28,10 +26,11 @@ body{
 .wrapper{
     margin: 0;
     padding: 0;
+    padding-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-bg-color);
+    background-color: white;
 }
 
 .items ul{
@@ -70,13 +69,20 @@ body{
 .items ul>li>a{
     padding: 16px;
     font-family: var(--primary-font-family);
+
     color: var(--primary-text-color);
 }
 
+.title:hover{
+    border-bottom: var(--secondary-bg-color) 7px solid;
+    transition: all 160ms ease-in-out;
+}
+
 .items ul>li>a:hover{
-    color: azure;
-    background-color: #99ad77;
-    transition: all 212ms ease-in-out;
+    border-bottom: var(--secondary-bg-color) 5px solid;
+    color: var(--primary-text-color);
+
+    transition: all 160ms ease-in-out;
 }
 
 .content{
@@ -173,7 +179,7 @@ body{
     min-height: 52vh;
     /*height: 400px;*/
     overflow: hidden;
-    border: #849378 solid 2px;
+    border: #849378 solid 2.5px;
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
@@ -181,26 +187,18 @@ body{
     transform: scale(1.042);
 }
 .firstLine > .box img{
-    /*width: 336px;*/
-    /*height: 189px;*/
-    /*height: 100px;*/
-    /*width: 28vw;*/
-    /*height: 15.75vw;*/
     width: 24.5vw;
     height: 13.75vw;
     margin: 20px;
-    /*width: 345px;*/
 }
 .date{
     float: right;
     padding-right: 2vw;
+    font-family: 'Belanosima', sans-serif;;
 }
 
 .firstLine > .box > .text{
-
     font-weight: bold;
-
-    /*color: #C4D7B2; IDE ELVIA JG*/
     margin-top: 0;
     font-size: 28px;
     margin-left: 20px;
@@ -210,7 +208,11 @@ body{
     justify-content: center;
     color: #353b2a;
 }
-
+.quote{
+    display: flex;
+    justify-content: center;
+    color: #353b2a;
+}
 
 a{ text-decoration: none}
 a:visited { text-decoration: none; color:black; }
@@ -220,12 +222,10 @@ a:hover, a:active { text-decoration: none; color:black }
 @media only screen and (max-width: 1280px){
     .content{
         display: block;
-
     }
     .fotoKelas{
         position: absolute;
         left: 40px;
-
     }
     .firstLine > .box{
         min-height: 40vh;
@@ -238,11 +238,7 @@ a:hover, a:active { text-decoration: none; color:black }
         height: auto;
     }
 }
-/*@media only screen and (max-width: 896px){*/
-/*    .firstLine > .box{*/
-/*        height: 65vh;*/
-/*    }*/
-/*}*/
+
 @media only screen and (max-width: 768px) {
     #menuList{
         height: 110px;
@@ -252,7 +248,7 @@ a:hover, a:active { text-decoration: none; color:black }
         border-radius: 0 0 20px 20px;
     }
     .wrapper{
-
+        padding-right: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -330,8 +326,6 @@ a:hover, a:active { text-decoration: none; color:black }
     .firstLine > .box img{
         width: 61vw;
         height: 31.375vw;
-    /*height: 198px;*/
-    /*    width: 352px;*/
     }
     .date{
         padding-right: 20px;
